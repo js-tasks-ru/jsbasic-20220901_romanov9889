@@ -1,9 +1,13 @@
 function factorial(n) {
-    let result = n;
+    let result = 1;
 
-    for (let i = n - 1; i > 0; i--){
+    for (let i = 2; i <= n; i++){
       result *= i;
     }
 
-    return result || 1;
+    return result;
   }
+
+  console.log(factorial(0));
+  console.log(factorial(5));
+  console.log(factorial(1));
